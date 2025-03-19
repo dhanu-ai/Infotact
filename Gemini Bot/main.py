@@ -1,8 +1,13 @@
+#Use the API key of your own
+#Create a .env file and add the API key to it
+#Keep the name of variable in the .env file as GOOGLE_API
+
 import base64, dotenv
 import os
 from google import genai
 from google.genai import types
 
+# Load environment variables
 dotenv.load_dotenv()
 
 # Memory to store conversation history
